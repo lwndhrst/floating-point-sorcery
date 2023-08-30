@@ -1,5 +1,4 @@
 /**
- *
  * Implementing algorithms from the following paper:
  *
  * Title:   Generalising the Fast Reciprocal Square Root Algorithm
@@ -28,6 +27,13 @@ void print_bits_examples() {
         printf("\n(float)    %f", x);
         printf("\n(int)      %d\n", as_int(x));
     }
+
+    int x = 0x5F3759DF;
+    printf("\nQuake III 'magic constant' 0x5F3759DF");
+    printf("\n(binary)   ");
+    print_bits(x);
+    printf("\n(float)    %f", as_float(x));
+    printf("\n(int)      %d\n", x);
 }
 
 float frsr_quake(float x) {
