@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 
-#define as_int(x) (*(int *)&x)
+#define as_int(x)   (*(int *)&x)
 #define as_float(x) (*(float *)&x)
 
 void print_bits(int x) {
